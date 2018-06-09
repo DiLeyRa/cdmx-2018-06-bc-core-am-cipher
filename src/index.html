@@ -6,6 +6,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--creamos un div donde el usuario introducira el texto a cifrar-->
+        <div id = "sCifrar">
+          <p>Texto a cifrar: </p>
+          <input type="text" id="texto">
+          <input type="button" id="cifrar" value="CIFRAR" onclick="cifrar()"/>
+          <input type="button" id="dCifrar" value="DECIFRAR" onclick="dCifrar()"/>
+        </div>
+    <!--creamos el div donde se introducira el rango que se recorrera-->
+        <div id="rangoRecorrido">
+        <p>N° de caracteres a recorrer: </p>
+        <input type="number" id="rango" max = "100" min ="0">
+    </div>
+    <!--creamos un div donde se mostrara el texto encriptado-->
+    <div id="cifrado">
+        <p>Texto cifrado: </p>
+        <p id="texto2"></p>
+    </div>
+
     <div id="root"></div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
