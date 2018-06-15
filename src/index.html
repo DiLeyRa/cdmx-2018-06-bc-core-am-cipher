@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!--creamos un div donde el usuario introducira el texto a cifrar-->
-        <div id = "sCifrar">
-          <p>Texto a cifrar: </p>
-          <input type="text" id="texto">
-          <input type="button" id="cifrar" value="CIFRAR" onclick="cifrar()"/>
-          <input type="button" id="dCifrar" value="DECIFRAR" onclick="dCifrar()"/>
-        </div>
-    <!--creamos el div donde se introducira el rango que se recorrera-->
-        <div id="rangoRecorrido">
-        <p>N° de caracteres a recorrer: </p>
-        <input type="number" id="rango" max = "100" min ="0">
-    </div>
-    <!--creamos un div donde se mostrara el texto encriptado-->
-    <div id="cifrado">
-        <p>Texto cifrado: </p>
-        <p id="texto2"></p>
-    </div>
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!--creamos un div donde el usuario introducira el texto a cifrar-->
+<h1>message spy</h1>
 
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+<p id="instruction">
+  <ul>1. Para cifrar: Introduce el texto a cifrar del lado izquierdo, el numero de tu key y pulsa el boton cifrar.
+  </ul>
+  <ul>    2. Para decifrar: Introduce el texto a decifrar del lado derecho, el numero de tu key y pulsa el boton decifrar.
+  </ul></p>
+
+
+  <input type="text" id="text" placeholder="Ingresar texto">
+  <input type="button" id="encrypt1" value="ENCRYPT" onclick="encodeE()"/>
+  <input type="button" id="decrypt1" value="DECRYPT" onclick="decodeE()"/>
+
+  <!--creamos el id donde se introducira el rango que se recorrera-->
+  <input type="number" id="rank" min ="0" placeholder="Key">
+
+  <!--creamos un div donde se mostrara el texto encriptado-->
+
+
+  <p id="text2"></p>
+
+
+  <div id="root"></div>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
 </html>

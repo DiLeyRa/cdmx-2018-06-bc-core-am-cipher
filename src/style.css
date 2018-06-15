@@ -1,0 +1,96 @@
+*{
+  background-color: ;
+  background-image: url("Images/Imagen1.png");
+  background-repeat: no-repeat;
+  background-position: 225px 50px;
+}
+h1{
+  position: absolute;
+  width: 556px;
+  height: 52px;
+  left: 420px;
+  top: 40px;
+
+font-family: Prompt;
+font-style: italic;
+font-size: 64px;
+text-align: center;
+background-color: transparent;
+padding: 10px;
+color: black;
+}
+#text{
+
+display: inline-block;
+position: absolute;
+width: 200px;
+height: 200px;
+left: 400px;
+top: 250px;
+
+background: white;
+border: 1px solid black;
+box-sizing: border-box;
+border-radius: 10px;
+}
+
+#text2{
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 800px;
+  top: 230px;
+
+  background: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+#encrypt1{
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  left: 620px;
+  top: 340px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 10px;
+
+  color: black;
+}
+#decrypt1{
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  left: 720px;
+  top: 340px;
+
+  font-family: Roboto;
+
+
+
+
+  font-size: 10px;
+
+  color: black;
+}
+
+#rank{
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  left: 620px;
+  top: 240px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 12px;
+
+  color: white;
+}
