@@ -1,11 +1,11 @@
-window.cipher = {
-encode : (offset, string) =>{//una funcion dentro de un objeto se llama metodo
-    let newMessage = [];
-    let encryptMessage = [];
-    let encryptMessageString;
+window.cipher = {//Se crea el objeto cipher
+encode : (offset, string) =>{//Se crea la funcion (metodo) encode el cual realizara la función de encriptado
+    let newMessage = [];//arreglo vacio que almacenera el mensaje Ascii
+    let encryptMessage = [];//arreglo vacio que almacenera el mensaje encriptado
+    let encryptMessageString;//se crea la variable que almacenara el mensaje encriptado
 
-    for (let i=0; i<string.length; i++){
-      console.log(string.charAt(i));
+    for (let i=0; i<string.length; i++){//Se crea un for para poder acceder a cada letra del texto
+      //console.log(string.charAt(i));
       if(string.charCodeAt(i)=== 32){//Para los espacios en blanco
         encryptMessage[i]= " ";
       }else{//para las demas letras
@@ -25,15 +25,15 @@ encode : (offset, string) =>{//una funcion dentro de un objeto se llama metodo
       }
     }
     encryptMessageString = encryptMessage.join("");
-    return encryptMessageString;
+    return encryptMessageString;//retorna la palabra encriptada
   },
-  decode : (offset, string) =>{
-    let newMessage = [];
-    let encryptMessage = [];
-    let encryptMessageString;
+  decode : (offset, string) =>{//Se crea la funcion (metodo) dencode el cual realizara la función de desencriptado
+    let newMessage = [];//arreglo vacio que almacenera el mensaje Ascii
+    let encryptMessage = [];//arreglo vacio que almacenera el mensaje encriptado
+    let encryptMessageString;//se crea la variable que almacenara el mensaje encriptado
 
 
-    for (let i = 0; i<string.length; i++){
+    for (let i = 0; i<string.length; i++){//Se crea un for para poder acceder a cada letra del texto
       if(string.charCodeAt(i)=== 32){//Para los espacios en blanco
         encryptMessage [i]= " ";
       }else{//para las demas letras
@@ -42,9 +42,7 @@ encode : (offset, string) =>{//una funcion dentro de un objeto se llama metodo
           //descifrado mayusculas
           if (((string.charCodeAt(i)) - 65 - offset)<0){
             newMessage [i]=   (((string.charCodeAt(i)) - 65 - offset) % 26 + 91);
-            console.log("***");
             console.log(newMessage[i]);
-            console.log("***");
             encryptMessage [i]= String.fromCharCode(newMessage [i]);
             //console.log(encryptMessage);
           }
@@ -57,9 +55,7 @@ encode : (offset, string) =>{//una funcion dentro de un objeto se llama metodo
             //descifrado minusculas
             if(((string.charCodeAt(i)) - 97 - offset)<0){
               newMessage [i]= (((string.charCodeAt(i)) - 97 - offset) % 26 + 123);
-              console.log("***");
               console.log(newMessage[i]);
-              console.log("***");
               encryptMessage [i]= String.fromCharCode(newMessage [i]);
             }else{
               newMessage [i]= (((string.charCodeAt(i)) - 97 - offset) % 26 + 97);
@@ -73,7 +69,7 @@ encode : (offset, string) =>{//una funcion dentro de un objeto se llama metodo
     }
 console.log(encryptMessage);
     encryptMessageString = encryptMessage.join("");
-    return encryptMessageString;
+    return encryptMessageString;//retorna la palabra encriptada
 
   }
 

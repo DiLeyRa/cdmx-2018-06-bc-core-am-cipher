@@ -6,32 +6,34 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!--creamos un div donde el usuario introducira el texto a cifrar-->
-<h1>message spy</h1>
+  <!--h1 para el nombre de nuestra aplicación-->
+  <h1>message spy</h1>
 
-<section id="instruction">
-<p>
-  <ul>1. Para Cifrar: Introduce el texto a cifrar del lado izquierdo, el numero de tu key y pulsa el boton Encrypt.
-  </ul>
-  <ul>    2. Para Decifrar: Introduce el texto a decifrar del lado izquierdo, el numero de tu key y pulsa el boton Dencrypt.
-  </ul></p>
-</section>
+  <!--creamos una sección para las instrucciones-->
+  <section id="instruction">
+    <p>
+      <ul>1. Para Cifrar: Introduce el texto a cifrar del lado izquierdo, el numero de tu key y pulsa el boton Encrypt.
+      </ul>
+      <ul>    2. Para Decifrar: Introduce el texto a decifrar del lado izquierdo, el numero de tu key y pulsa el boton Dencrypt.
+      </ul></p>
+    </section>
 
+    <!--creamos un input tipo text donde se pedira que el usuario introduzca el texto-->
+    <input type="text" id="text" placeholder="Ingresar texto">
+    <!--creamos un input tipo button donde se ligara a la función que encripta-->
+    <input type="button" id="encrypt1" value="ENCRYPT" onclick="encodeE()"/>
+    <!--creamos un input tipo button donde se ligara a la función que desencripta-->
+    <input type="button" id="decrypt1" value="DECRYPT" onclick="decodeE()"/>
 
-  <input type="text" id="text" placeholder="Ingresar texto">
-  <input type="button" id="encrypt1" value="ENCRYPT" onclick="encodeE()"/>
-  <input type="button" id="decrypt1" value="DECRYPT" onclick="decodeE()"/>
+    <!--creamos el id donde se introducira el rango que se recorrera-->
+    <input type="number" id="rank" min ="0" placeholder="Key">
 
-  <!--creamos el id donde se introducira el rango que se recorrera-->
-  <input type="number" id="rank" min ="0" placeholder="Key">
+    <!--creamos un id de un parrafo donde se mostrara el texto encriptado-->
+    <p id="text2"></p>
 
-  <!--creamos un div donde se mostrara el texto encriptado-->
-
-
-  <p id="text2"></p>
-
-  <div id="root"></div>
-  <script src="cipher.js"></script>
-  <script src="index.js"></script>
-</body>
-</html>
+    <!--creamos los link para ligar html con cipher e index-->
+    <div id="root"></div>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
+  </body>
+  </html>

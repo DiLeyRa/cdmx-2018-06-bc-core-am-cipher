@@ -1,10 +1,10 @@
-*{
+*{/*Estilo para la pagina se agrega una imagen de fondo se le da una posicion y con el comando no-repeat indicamos que la imagen no se repita*/
   background-image: url("Images/Imagen1.jpg");
   background-position: 225px 50px;
   background-repeat: no-repeat;
 }
 
-h1{
+h1{/*Estilo para el h1 (nombre de la app), se modifica la posicion y el tipo de letra.*/
 position: center;
 
 font-family: Prompt;
@@ -14,7 +14,7 @@ text-align: center;
 padding: 10px;
 color: black;
 }
-#instruction{
+#instruction{/*Estilo para el id instrucciones, se modifica la posicion y el tipo de letra.*/
   position: absolute;
   left: 280px;
   top: 595px;
@@ -23,7 +23,7 @@ color: black;
   font-size: 15px;
   color: black;
 }
-#text{
+#text{/*Estilo para el id text, se modifica la posicion y el tipo de letra.*/
 
 display: inline-block;
 position: absolute;
@@ -38,7 +38,7 @@ box-sizing: border-box;
 border-radius: 10px;
 }
 
-#text2{
+#text2{/*Estilo para el id text2, se modifica la posicion y el tipo de letra.*/
   display: inline-block;
   position: absolute;
   width: 230px;
@@ -51,7 +51,7 @@ border-radius: 10px;
   box-sizing: border-box;
   border-radius: 10px;
 }
-#encrypt1{
+#encrypt1{/*Estilo para el id encrypt1, se modifica la posicion y el tipo de letra.*/
   position: absolute;
   width: 60px;
   height: 30px;
@@ -67,7 +67,7 @@ border-radius: 10px;
 
   color: black;
 }
-#decrypt1{
+#decrypt1{/*Estilo para el id decrypt1, se modifica la posicion y el tipo de letra.*/
   position: absolute;
   width: 60px;
   height: 30px;
@@ -81,7 +81,7 @@ border-radius: 10px;
   color: black;
 }
 
-#rank{
+#rank{/*Estilo para el id rank, se modifica la posicion y el tipo de letra.*/
   position: absolute;
   width: 60px;
   height: 30px;
